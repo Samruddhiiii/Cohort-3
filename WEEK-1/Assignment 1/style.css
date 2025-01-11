@@ -1,0 +1,143 @@
+body {
+    margin-left: 10%;
+    margin-right:10%;
+    padding:0%;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: white;
+}
+
+.Nvbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-weight: bold;
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links ul li {
+    margin: 0 10px;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.links ul li a:hover {
+    color: #00aaff;
+}
+
+.search-download {
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.theme-toggle-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.search-bar {
+    padding: 5px;
+    border: 1px solid #333;
+    background-color: #222;
+    color: white;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.download-btn {
+    background-color: #007acc;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background-color: #005f99;
+}
+
+@media (max-width: 768px) {
+    .Nvbar {
+        flex-wrap: wrap;
+    }
+
+    .links ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .search-download {
+        margin-top: 10px;
+    }
+}
+
+.image1 {
+    justify-content: center;
+    padding-left:10%;
+}
+
+.text-section {
+   font: size 10px;
+   color:#c4d3f3;
+   flex: 1;
+   padding: 20px;
+ 
+}
+
+
+.text-section h1 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.text-section p {
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+.text-section a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.text-section a:hover {
+    text-decoration: underline;
+}
+
+.text-section p a {
+    display: block; /* Ensures links within paragraphs appear on new lines */
+    margin-bottom: 15px; /* Adds space between links */
+}

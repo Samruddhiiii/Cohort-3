@@ -1,0 +1,77 @@
+/* FLEXBOX'S IMPORTANT PROPERTIES */
+/*
+1. Container Properties
+
+These properties are applied to the flex container.
+
+1)display
+    Defines a flex container.
+Options:
+    flex: Enables Flexbox layout.
+    inline-flex: Enables Flexbox layout but behaves like an inline element.
+2)flex-direction
+    Defines the direction of the main axis.
+Options:
+    row (default): Items are placed in a row (left to right).
+    row-reverse: Items are placed in a row but reversed (right to left).
+    column: Items are placed in a column (top to bottom).
+    column-reverse: Items are placed in a column but reversed (bottom to top).
+3)justify-content
+    Aligns items along the main axis.
+Options:
+    flex-start (default): Items align at the start.
+    flex-end: Items align at the end.
+    center: Items align in the center.
+    space-between: Equal space between items, no space at edges.
+    space-around: Equal space around items (half at edges).
+    space-evenly: Equal space between items and edges.
+4)align-items
+    Aligns items along the cross-axis.
+ Options:
+    stretch (default): Items stretch to fill the container.
+    flex-start: Items align at the start.
+    flex-end: Items align at the end.
+    center: Items align in the center.
+    baseline: Items align based on their baseline.
+5)align-content
+    Aligns rows along the cross-axis when there’s extra space (for multi-line containers).
+ Options:
+    stretch (default): Rows stretch to fill the container.
+    flex-start: Rows align at the start.
+    flex-end: Rows align at the end.
+    center: Rows align in the center.
+    space-between: Equal space between rows.
+    space-around: Equal space around rows.
+    space-evenly: Equal space between rows and edges.
+6)flex-wrap
+    Defines if items should wrap onto a new line.
+ Options:
+    nowrap (default): Items don’t wrap.
+    wrap: Items wrap to the next line if needed.
+    wrap-reverse: Items wrap in reverse order.
+
+
+
+2. Item Properties
+These properties are applied to flex items.
+
+1)flex
+    A shorthand for flex-grow, flex-shrink, and flex-basis.
+    Syntax: flex: grow shrink basis.
+2)flex-grow
+    Defines how much a flex item should grow relative to others.
+    Default: 0 (no growth).
+3)flex-shrink
+    Defines how much a flex item should shrink relative to others.
+    Default: 1 (shrinks if needed).
+4)flex-basis
+    Defines the initial size of an item before space distribution.
+    Default: auto.
+5)align-self
+    Aligns an item on the cross-axis (overrides align-items).
+Options:
+    auto (default): Inherits from align-items.
+    flex-start, flex-end, center, baseline, stretch.
+6)order
+    Defines the order of items.
+    Default: 0. Lower values appear first.
